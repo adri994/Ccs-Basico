@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+:root {
+    --color: blue;
+    --border: 3px solid yellow;
+}
+
+.paragraph {
+    color: var(--color)
+}
+
+.article{
+    --color:green;
+}
+
+.check:checked + .box{
+    --color: purple;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background: var(--color);
+    border: var(--border)
+}
+</style>
+<body>
+    <h1 class="title">Variables CSS</h1>
+    <article class="main-article">
+        <p class="paragraph">Párrafo principal</p>
+    </article>
+
+    <article class="article">
+        <p class="paragraph">Otro párrafo</p>
+    </article>
+
+    <input type="checkbox" class="check">
+    <div class="box"></div>
+
+</body>
+</body>
+</html>

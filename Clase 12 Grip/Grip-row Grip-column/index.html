@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+/*
+    Ordenar elementos con grid-column y grid-row
+    grid-column-start: establece desde que column-line empezará el elemento
+    grid-column-end: establece hasta que column-line llega el elemento
+    grid-row-start: establece desde que row-line empezará el elemento
+    grid-row-end: establece hasta que row-line llega el elemento
+    Existe un shorthand que engloba las 2 propiedades
+    grid-column: start / end
+    grid-row: start / end
+    tanto start como end admiten valores positivos, negativos y la palabra span
+    Valor positivo: Empieza a contar las column-lines o las row-lines de izquierda a derecha
+    Valor negativo: Empieza a contar las column-lines o las row-lines de derecha a izquierda
+    span: establecemos cuantas columnas o filas ha de ocupar, span 3 es como decirle que ocupe 3 columnas
+    tip: Si ponemos en el valor end -1 llegará hasta el final
+*/
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    color: #eee;
+    font-family: sans-serif;
+    background-image: radial-gradient(circle, #b94bf8, #3a1957);
+    background-repeat: no-repeat;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows:100px 100px 100px;
+}
+
+.grid-item {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.grid-item:nth-child(3),
+.grid-item:nth-child(4) {
+    background: orange;
+}
+
+.grid-item:first-child,
+.grid-item:nth-child(2) {
+    background: violet;
+}
+
+.grid-item:nth-child(4) {
+    grid-row: 1 / 2;
+}
+
+.grid-item:nth-child(3) {
+    grid-column: 3/ 4;
+    grid-row: span 2;
+}
+
+.grid-item:nth-child(2) {
+    grid-row: 2 /span 2;
+    grid-column:span 2
+}
+</style>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">F</div>
+        <div class="grid-item">G</div>
+        <div class="grid-item">H</div>
+        <div class="grid-item">I</div>
+    </div>
+</body>
+</body>
+</html>

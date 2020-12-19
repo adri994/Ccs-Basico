@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+/*
+TEXT
+    Text-transform: Transforma el texto a mayúsculas, minúsculas, etc.
+        lowercase (minusculas) | uppercase (mayusculas) | capitalize (primera letra de cada palabra en mayusculas)
+    text-align: Alinea el texto del elemento a la izquierda, derecha, etc. SOLO ELEMENTOS DE BLOQUE (excepto en botones, que aunque sean de elementos en línea funciona)
+        center | left | right | justify
+    text-decoration: Establece la decoración del texto
+        overline | line-through | underline | none
+    text-indent: mueve la primera linea de un de texto. SOLO ELEMENTOS DE BLOQUE
+*/
+
+/* .title {
+        text-transform: capitalize;
+    }
+    .paragraph {
+        text-align: justify;
+        text-indent: 50px;
+    }
+    .link {
+        text-decoration: none;
+    } */
+
+/*
+OTHER
+    line-height: establece la altura de la linea
+    letter-spacing: establece la separacion de las letras con una medida en cualquier unidad
+*/
+
+.box {
+    width: 150px;
+    height: 150px;
+    background: red;
+}
+
+.box__item {
+    text-align: center;
+    line-height: 150px;
+}
+
+.paragraph {
+    letter-spacing: 5px;
+}
+</style>
+<body>
+    <h1 class="title">Tipografías y <span class="span">textos</span></h1>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolore amet cupiditate sint,
+        modi sunt odio nisi doloremque voluptatem. Corrupti, natus laudantium. Quis aspernatur repellat vero nemo
+        soluta, expedita tempora.</p>
+    <a href="#" class="link">Soy un enlace</a>
+
+    
+    <div class="box">
+        <div class="box__item">ITEM 1</div>
+    </div>
+    <button class="button">Soy un botón</button>
+</body>
+</body>
+</html>

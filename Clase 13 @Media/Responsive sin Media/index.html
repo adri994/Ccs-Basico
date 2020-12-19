@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+/* 
+banner con unidades de viewport
+footer siempre abajo
+responsive con flexbox
+responsive con grid
+*/
+body {
+    margin: 0;
+    color: #eee;
+    font-family: sans-serif;
+    background-image: radial-gradient(circle, #b94bf8, #3a1957);
+    background-repeat: no-repeat;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexbox__item{
+    margin: 2rem;
+    min-width: 320px;
+    flex:1 1 320px;
+}
+
+/* .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 2rem;
+    padding: 1rem;
+} */
+
+.banner{
+    background-color: royalblue;
+    padding: 15vmin;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.footer{
+    background-color: red;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: auto;
+}
+</style>
+<body>
+    <header class="header">
+        <div class="banner">Banner</div>
+    </header>
+    <div class="flexbox grid">
+        <p class="flexbox__item grid__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. In minus fugiat voluptates modi laudantium exercitationem commodi rem, tenetur minima eos? Ipsa exercitationem dolore facere pariatur omnis dicta harum modi quia.</p>
+        <p class="flexbox__item grid__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. In minus fugiat voluptates modi laudantium exercitationem commodi rem, tenetur minima eos? Ipsa exercitationem dolore facere pariatur omnis dicta harum modi quia.</p>
+        <p class="flexbox__item grid__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. In minus fugiat voluptates modi laudantium exercitationem commodi rem, tenetur minima eos? Ipsa exercitationem dolore facere pariatur omnis dicta harum modi quia.</p>
+        <p class="flexbox__item grid__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. In minus fugiat voluptates modi laudantium exercitationem commodi rem, tenetur minima eos? Ipsa exercitationem dolore facere pariatur omnis dicta harum modi quia.</p>
+        <p class="flexbox__item grid__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. In minus fugiat voluptates modi laudantium exercitationem commodi rem, tenetur minima eos? Ipsa exercitationem dolore facere pariatur omnis dicta harum modi quia.</p>
+        <p class="flexbox__item grid__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. In minus fugiat voluptates modi laudantium exercitationem commodi rem, tenetur minima eos? Ipsa exercitationem dolore facere pariatur omnis dicta harum modi quia.</p>
+    </div>
+    <footer class="footer">
+        footer
+    </footer>
+</body>
+</body>
+</html>

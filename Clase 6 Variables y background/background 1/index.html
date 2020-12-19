@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+/*
+Dynamic
+    :link (links) - Link no visitado
+    :visited (links) - Link visitado
+    :active (links) - El momento del click
+    :hover - Al poner el mouse sobre el elemento
+    :focus - Cuando el elemento tiene el foco
+Target
+    :target - Elemento es objetivo de un marcador o ancla
+Language
+    :lang() - Elemento que contiene el atributo lang que especifiquemos
+*/
+
+/*
+    ===Ejercicios PSEUDOCLASES I===
+        .link:link {
+            color: red;
+        }
+        .link:visited {
+            color: chartreuse
+        }
+        .link:active {
+            color: cyan;
+            background: red;
+        }
+        .title:hover {
+            color: blueviolet;
+        }
+        .button {
+            text-decoration: none;
+            display: inline-block;
+            background: red;
+            padding: .5em;
+            border-radius: 10px;
+            color: #FFF;
+        }
+        .button:active {
+            transform: scale(.9)
+        }
+        .button:hover {
+            color: red;
+            background: #fff;
+            border: 1px solid;
+            border-radius: 10px;
+        }
+        .input:focus {
+            background: green;
+        }
+        .menu {
+            background: lightblue;
+            display: block;
+            padding: 1em;
+            text-decoration: none;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .text {
+            margin-top: 500px;
+            margin-bottom: 500px;
+        }
+        .text:target {
+            padding-top: 75px;
+        }
+        .span {
+            display: block;
+        }
+        .span:lang(en) {
+            color: red;
+        }
+        .span:lang(es) {
+            color: blue;
+        }
+        */
+</style>
+<body>
+    <div id="fullscreen">
+        <h1>Demostración :fullscreen</h1>
+        <p>Este texto se pondrá grande y rojo cuando el navegador esté en modo de pantalla completa.</p>
+        <button id="fullscreen-button">Entrar en pantalla completa</button>
+    </div>
+    <h1 class="title">Pseudoclases</h1>
+    <!-- <a href="#" class="link">Soy un enlace no visitado</a>
+    <a href="#" class="link">Soy un enlace visitado</a> -->
+
+    <!--  <input type="text" class="input">
+    <a href="#" class="button">Button</a> -->
+
+    <!-- <a href="#text" class="menu">Ir a parrafo</a> -->
+    <!--  <p id="text" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolor in
+    exercitationem autem
+    odio! Debitis magnam quia accusamus at. Delectus, ipsa ullam? Cupiditate, sequi. Culpa eos quo modi ipsam
+    consectetur</p> -->
+    <span lang="en" class="span">Hello World</span>
+    <span lang="es" class="span">Hola Mundo</span>
+</body>
+</body>
+</html>

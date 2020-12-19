@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+/* 
+    table-layout: Define como se comportan las dimensiones de una tabla y los anchos de las "columnas"
+        automatic: valor por defecto
+        fixed: necesita un width declarado, si no se le da un ancho a cada columna se ditribuyen equitativamente
+    caption-side: define donde se coloca el caption de una tabla.
+        top: valor por defecto
+        bottom: se coloca al pie de la tabla
+    
+    border-spacing: Controla el espacio entre las celdas
+        recibe una medida en cualquier unidad 
+    border-collapse: Controla si las celdas se mantienen juntas o separadas.
+        separate: valor por defecto
+        collapse: junta las celdas para no
+    
+    empty-cells: Controla qué hacer con las celdas vacías
+        show: valor por defecto
+        hide: oculta las celdas vacías
+*/
+
+/* .table{
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+} */
+
+/* .table{
+    caption-side: bottom;
+} */
+
+.table, .table__data, .table__head {
+    border: 1px solid black;
+    border-spacing: 10px;
+}
+
+.table {
+    width: 100%;
+    empty-cells: hide;
+}
+
+.table__data{
+    background: lightblue;
+}
+
+.table-container{
+    overflow-x: auto;
+}
+</style>
+<body>
+    <div class="table-container">
+        <table class="table">
+            <caption>Avengers</caption>
+            <colgroup>
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+            </colgroup>
+            <thead>
+                <th class="table__head">Username</th>
+                <th class="table__head">Email</th>
+                <th class="table__head">Company</th>
+            </thead>
+            <tbody>
+                <tr class="table__row">
+                    <td class="table__data">TonyStark</td>
+                    <td class="table__data">tonystark@gmail.com</td>
+                    <td class="table__data">Marvel</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__data">Bruce Banner</td>
+                    <td class="table__data">brucebanner@gmail.com</td>
+                    <td class="table__data">Marvel</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__data">PeterParker</td>
+                    <td class="table__data">spiderman@gmail.com</td>
+                    <td class="table__data">Marvel</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__data">SteveRogers</td>
+                    <td class="table__data"></td>
+                    <td class="table__data">Marvel</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iste impedit porro reprehenderit ex quibusdam mollitia illo expedita nobis dolorem suscipit magnam, quos excepturi harum enim tempora? Aliquam, ad soluta.</p>
+    </body>
+    
+    </html>
+    
+</body>
+</body>
+</html>

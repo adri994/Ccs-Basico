@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+/* 
+Flexbox
+    display:flex
+        Convierte el contenedor en un contexto para flexbox y hace que el contenedor sea un elemento de bloque para los elementos que lo rodean
+    display:inline-flex
+        Convierte el contenedor en un contexto para flexbox y hace que el contenedor sea un elemento en línea para los elementos que lo rodean
+    flex-direction: row(default) | row-reverse | column | column-reverse
+        Modifica la dirección y cual es el eje principal.
+        Por defecto es row (horizontal de izquierda a derecha)
+        row-reverse (horizontal de derecha a izquierda)
+        column vertical de arriba abajo
+        column-reverse vertical de abajo arriba
+    flex-wrap: no-wrap(default) | wrap | wrap-reverse
+        Controla si los elementos saltarán de línea o no
+        no-wrap es el valor por defecto, un contenedor flex va a hacer que todos los elementos se queden en una línea si no le especificamos lo contrario
+        wrap hace que los elementos que no quepan en una línea (manteniendo sus dimensiones, si las tuvieran) salten a la linea inferior.
+        wrap-reverse hace lo mismo que wrap pero en lugar de hacer que salten a la línea inferior, hace que salten a la linea superior. 
+*/
+
+.flex-container {
+    background-color: #FCA17D;
+    padding: .5em 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    width: 30px;
+    height: 30px;
+    margin: .5em;
+    line-height: 30px;
+    color: aliceblue;
+    text-align: center;
+    background-color: #9A348E;
+}
+</style>
+<body>
+        <!-- <span>EJEMPLO</span> -->
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <div class="flex-item">6</div>
+            <div class="flex-item">7</div>
+            <div class="flex-item">8</div>
+            <div class="flex-item">9</div>
+            <div class="flex-item">10</div>
+        </div>
+</body>
+</body>
+</html>

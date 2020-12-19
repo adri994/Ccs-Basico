@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  
+  .input,
+.label {
+    display: block;
+}
+
+/*
+UI States
+    :enabled
+    :disabled
+    :checked
+    :in-range
+    :out-of-range
+    :required
+    :optional
+    :valid
+    :invalid
+    :read-only
+    :read-write
+*/
+
+.input:enabled {
+    background: red;
+}
+
+.input:disabled {
+    background: yellow;
+    border: none;
+}
+
+.input:checked + label{
+    font-size: 2em;
+}
+
+.input:in-range{
+    background: green;
+}
+
+.input:out-of-range{
+    background: blue;
+}
+
+.input:optional{
+    background: purple;
+}
+
+.input:required{
+    background: lightcoral;
+}
+
+.input:valid{
+    background: green;
+}
+
+.input:invalid{
+    background: red;
+}
+</style>
+<body>
+    <form action="#">
+        <label class="label">:enabled</label>
+        <input class="input" type="text">
+        <label class="label">:disabled</label>
+        <input class="input" type="text" disabled>
+        <input id="checkbox" class="input" type="checkbox">
+        <label for="checkbox" class="label">:checked</label>
+        <label class="label">:in-range</label>
+        <input class="input" type="number" min="50" max="60">
+        <label class="label">:out-of-range</label>
+        <input class="input" type="number" min="50" max="100">
+        <label class="label">:optional</label>
+        <input class="input" type="text">
+        <label class="label">:required</label>
+        <input class="input" type="text" required>
+        <label class="label">:valid</label>
+        <input class="input" type="number">
+        <label class="label">:invalid</label>
+        <input class="input" type="number">
+    </form>
+</body>
+</body>
+</html>

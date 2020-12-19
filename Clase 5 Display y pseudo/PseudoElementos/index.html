@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*
+Se utilizan para dar estilo a partes específicas de un elemento.
+La sintaxis es selector::pseudo-element{ estilos }
+Existen 5 pseudoelementos:
+    ::first-letter (Elementos de bloque)
+    ::first-line (Elementos de bloque)
+    ::selection (Retirado de la especificación)
+    ::before
+    ::after
+        La propiedad content es obligatoria
+        Son elementos de línea por defecto
+        Son hijos del elemento al que pertenecen
+*/
+
+.title::first-letter{
+    color: red;
+    font-size: 2em;
+}
+
+.text::first-line{
+    font-size: 2em;
+    color:blue;
+}
+
+.inline::first-letter{
+    color: red;
+    font-size: 2em;
+}
+
+.text::selection{
+    color: lime;
+    background: red;
+}
+
+.dolar::before,
+.dolar::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: red;
+}
+</style>
+<body>
+    <h1 class="title">Pseudoelementos</h1>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eum impedit dolorum eligendi et, accusantium laudantium deleniti molestias id optio quibusdam rerum architecto atque cupiditate ratione cumque enim nobis voluptatem.</p>
+    <p class="dolar">5</p>
+    <span class="inline">Soy un elemento de línea</span>
+</body>
+</body>
+</html>
